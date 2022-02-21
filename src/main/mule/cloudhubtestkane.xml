@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<flow name="cloudhubtestkaneFlow" doc:id="688fd506-705a-40d1-a817-9ecc38c7a9cb" >
+		<scheduler doc:name="Scheduler" doc:id="3fa5966e-83f6-46ef-b9a7-0e693663fbb3" >
+			<scheduling-strategy >
+				<fixed-frequency />
+			</scheduling-strategy>
+		</scheduler>
+		<logger level="INFO" doc:name="Logger" doc:id="32feb456-bb5d-4d98-9a5c-465161975308" message="test"/>
+	</flow>
+</mule>
